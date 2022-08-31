@@ -5,6 +5,9 @@ SocialNetSpy© is an information gathering tool based on Python. It obtains all 
 # git clone
 git clone https://github.com/CyberNDR/SocialNetSpy.git
 
+# change from current directory to SocialNetSpy
+cd SocialNetSpy
+
 # install dependencies
 pip install google
 pip install beautifulsoup4
