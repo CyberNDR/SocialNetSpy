@@ -200,7 +200,7 @@ print("Tinder")
 print("-----------\n")
 final_requests25 = ""
 for final_requests25 in search(query25, tld="co.in", num=4, stop=4, pause=2):
-	print(final_results25)
+	print(final_requests25)
 if final_requests25 == "":
 	print("Not found")
 
