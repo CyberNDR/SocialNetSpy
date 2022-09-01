@@ -246,7 +246,9 @@ if final_requests29 == "":
 
 print("\n")
 
-print("--------------------------------------")
+print("------------------------------------------------")
+print("General Informations about " + maininput)
+print("------------------------------------------------")
 
 query17 = "source:" + maininput
 print("\n-----------")
