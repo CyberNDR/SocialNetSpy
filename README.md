@@ -8,9 +8,8 @@ git clone https://github.com/CyberNDR/SocialNetSpy.git
 # change from current directory to SocialNetSpy
 cd SocialNetSpy
 
-# install dependencies
-pip install google
-pip install beautifulsoup4
+# install requirements
+pip install -r requirements.txt
 
 # run the program
 python socialnetspy.py
