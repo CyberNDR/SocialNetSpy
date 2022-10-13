@@ -1,6 +1,8 @@
 # SocialNetSpy©
 SocialNetSpy© is an information gathering tool based on Python. It obtains all the social network profiles and general informations of a target querying the Google database through operators.
 # Features
+• The list of social networks that the tool finds through a search:
+
 • Instagram
 
 • YouTube
