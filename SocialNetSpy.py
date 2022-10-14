@@ -1,5 +1,6 @@
 #!/bin/python3
 import time
+import pyfiglet
 try:
 	from googlesearch import search
 except ImportError:
@@ -13,12 +14,8 @@ print("-----------------------------")
 
 print("\n")
 
-print(" $$$$$                    $$           $$   $$   $$           $$    $$$$$")
-print("$$   $$                        $$$$$   $$   $$$  $$   $$$$    $$   $$   $$   $$$$   $$  $$")
-print(" $$$      $$$$    $$$$$   $$       $$  $$   $$$$ $$  $$  $$  $$$$   $$$     $$  $$  $$  $$")
-print("   $$$   $$  $$  $$       $$    $$$$$  $$   $$ $$$$  $$$$$$   $$      $$$   $$  $$   $$$$$")
-print("$$   $$  $$  $$  $$       $$   $$  $$  $$   $$  $$$  $$       $$   $$   $$  $$$$$       $$")
-print(" $$$$$    $$$$    $$$$$   $$    $$$$$   $$  $$   $$   $$$$$    $$   $$$$$   $$      $$$$$")
+Logo = pyfiglet.figlet_format("SocialNetSpy")
+print(Logo)
 
 print("\n")
 time.sleep(1)
@@ -47,11 +44,12 @@ print("        SOCIALNETSPY        |")
 print("-----------------------------")
 def main():
 	print("\n")
+	print("--------")
+	print("Options:")
+	print("--------")
 	print("[99] Exit")
-
+	print("[-h] Know what targets SocialNetSpy processes")
 	print("\n")
-
-	print("Type -h to know which targets SocialNetSpy processes.")
 	print("------------------------------")
 	maininput = input("INPUT TARGET\n->")
 
@@ -68,12 +66,7 @@ def main():
 
 		print("\n")
 
-		print(" $$$$$                    $$           $$   $$   $$           $$    $$$$$")
-		print("$$   $$                        $$$$$   $$   $$$  $$   $$$$    $$   $$   $$   $$$$   $$  $$")
-		print(" $$$      $$$$    $$$$$   $$       $$  $$   $$$$ $$  $$  $$  $$$$   $$$     $$  $$  $$  $$")
-		print("   $$$   $$  $$  $$       $$    $$$$$  $$   $$ $$$$  $$$$$$   $$      $$$   $$  $$   $$$$$")
-		print("$$   $$  $$  $$  $$       $$   $$  $$  $$   $$  $$$  $$       $$   $$   $$  $$$$$       $$")
-		print(" $$$$$    $$$$    $$$$$   $$    $$$$$   $$  $$   $$   $$$$$    $$   $$$$$   $$      $$$$$")
+		print(Logo)
 
 		print("\n")
 
@@ -322,10 +315,25 @@ def main():
 	print("General Informations about " + maininput)
 	print("------------------------------------------------")
 
+	query30 = maininput
+	print("\n-----------")
+	print("General Google Search")
+	print("-----------\n")
+	final_requests30 = ""
+	for final_requests30 in search(query30, tld="co.in", num=4, stop=4, pause=2):
+		print(final_requests30)
+	if final_requests30 == "":
+		print("Not found")
+
 	query17 = "source:" + maininput
 	print("\n-----------")
 	print("Find news results from a certain source in Google News about " + maininput)
 	print("-----------\n")
+	final_requests17 = ""
+	for final_requests17 in search(query17, tld="co.in", num=4, stop=4, pause=2):
+		print(final_requests17)
+	if final_requests17 == "":
+		print("Not found")
 
 	query11 = "site:" + maininput
 	print("\n-----------")
@@ -437,12 +445,7 @@ def main():
 
 	print("\n")
 
-	print(" $$$$$                    $$           $$   $$   $$           $$    $$$$$")
-	print("$$   $$                        $$$$$   $$   $$$  $$   $$$$    $$   $$   $$   $$$$   $$  $$")
-	print(" $$$      $$$$    $$$$$   $$       $$  $$   $$$$ $$  $$  $$  $$$$   $$$     $$  $$  $$  $$")
-	print("   $$$   $$  $$  $$       $$    $$$$$  $$   $$ $$$$  $$$$$$   $$      $$$   $$  $$   $$$$$")
-	print("$$   $$  $$  $$  $$       $$   $$  $$  $$   $$  $$$  $$       $$   $$   $$  $$$$$       $$")
-	print(" $$$$$    $$$$    $$$$$   $$   $$$$$   $$  $$   $$   $$$$$    $$   $$$$$   $$      $$$$$")
+	print(Logo)
 
 	print("\n")
 
