@@ -31,7 +31,7 @@ SocialNetSpy© is an information gathering tool based on Python. It obtains all 
 
 • Spotify
 
-• Streamingcommunity
+• Steam
 
 • Tinder
 
